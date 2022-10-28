@@ -217,6 +217,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     NexusLauncherResOverlay
 
+# Inherit art options
+include vendor/aosp/config/art.mk
+
 # Audio
 $(call inherit-product, vendor/aosp/config/audio.mk)
 
